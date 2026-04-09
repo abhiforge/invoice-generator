@@ -20,14 +20,14 @@ interface LineItem {
 
 export default function InvoiceForm() {
     const [seller, setSeller] = useState({
-        name: 'RAM PAUL SONI',
-        address: 'RT 804 ROYAL TOWER, SHIPRA SUNCITY,\nINDIRAPURAM GHAZIABAD, UP- 201014',
-        phone: '7042110432',
-        pan: 'ACWPS2626J',
-        email: 'sonirp1952@gmail.com',
+        name: 'MAKSUDAN SINGH & ABHISHEK KUMAR',
+        address: '222, Hawai Nagar, Road No. 5, Khunti Road,\nBirsa Chowk, Ranchi, Jharkhand - 834003',
+        phone: '9955159071',
+        pan: 'BJIPS6351J',
+        email: 'abhiex0@gmail.com',
         logoBase64: '',
-        supportPhone: '7042110432',
-        supportEmail: 'sonirp1952@gmail.com',
+        supportPhone: '9955159071',
+        supportEmail: 'abhiex0@gmail.com',
     });
 
     const [client, setClient] = useState({
@@ -38,8 +38,8 @@ export default function InvoiceForm() {
     });
 
     const [invoice, setInvoice] = useState({
-        number: 'RPS/25-26/03',
-        date: new Date().toISOString().split('T')[0],
+        number: 'MSA/25-26/01',
+        date: '2026-01-31',
         billingPeriod: '1.1.2026 to 31.1.2026',
         terms: 'Due upon receipt',
         noOfDays: '31',
@@ -47,13 +47,13 @@ export default function InvoiceForm() {
     });
 
     const [items, setItems] = useState<LineItem[]>([
-        { description: 'Lease Rent', uom: 'SFT.', qty: 305.28, unitPrice: 152.09, amount: 0 },
+        { description: 'Lease Rent', uom: 'SFT.', qty: 643.18, unitPrice: 152.09, amount: 0 },
     ]);
 
     const [bank, setBank] = useState({
-        beneficiary: 'RAM PAUL SONI',
-        bankName: 'Punjab National Bank',
-        accountNo: '4052000100170806, IFSC Code: PUNB0405200',
+        beneficiary: 'MAKSUDAN SINGH / ABHISHEK KUMAR',
+        bankName: 'Canara Bank, Birsa Chowk Branch, Ranchi',
+        accountNo: '5362101001525, IFSC Code: CNRB0005362',
     });
 
     useEffect(() => {
