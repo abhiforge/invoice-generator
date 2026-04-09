@@ -24,10 +24,10 @@ export default function InvoiceForm() {
         address: '222, Hawai Nagar, Road No. 5, Khunti Road,\nBirsa Chowk, Ranchi, Jharkhand - 834003',
         phone: '9955159071',
         pan: 'BJIPS6351J',
-        email: 'abhiex0@gmail.com',
+        email: 'abhiexo@gmail.com',
         logoBase64: '',
         supportPhone: '9955159071',
-        supportEmail: 'abhiex0@gmail.com',
+        supportEmail: 'abhiexo@gmail.com',
     });
 
     const [client, setClient] = useState({
